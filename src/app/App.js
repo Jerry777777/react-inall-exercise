@@ -3,6 +3,7 @@ import './app.less';
 import {Route, BrowserRouter} from "react-router-dom";
 import Home from "./Home";
 import Header from './Header';
+import Calculator from './calculator/Calculator';
 
 class App extends Component {
   render() {
@@ -10,7 +11,8 @@ class App extends Component {
       <div className="app">
         <BrowserRouter>
           <Header />
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/' component={Home} />
+          <Route path='/calculator' component={Calculator} />
         </BrowserRouter>
       </div>
     );
