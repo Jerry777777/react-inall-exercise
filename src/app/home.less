@@ -2,24 +2,32 @@
   color: if((true), red, yellow);
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
   padding: 0;
-} 
+}
 
 * {
   box-sizing: border-box;
 }
 
+.app {
+  height: 100%;
+}
+
+
 .page {
+  height: 100%;
   margin: 0 150px;
   background-color: lightgrey;
 }
 
 #title {
   height: 400px;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/hero-image.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero-image.png");
   background-size: cover;
   background-position: bottom center;
   padding-top: 200px;
@@ -51,10 +59,11 @@ html, body, #root {
   width: 150px;
 }
 
-#links ul li a, #links ul li a:visited {
+#links ul li a,
+#links ul li a:visited {
   display: block;
   color: white;
   font-size: 1.7em;
   font-weight: 300;
   text-decoration: underline;
-} 
+}

@@ -19,7 +19,6 @@ export default class Calculator extends React.Component {
         <h1>在线计算器</h1>
         <form>
           <p id="screen">{this.state.values.join(' ')}</p>
-          debugger
           <Buttons
           handleInput={this.handleInput}
           handleClear={this.handleClear}
